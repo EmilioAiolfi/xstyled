@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { LiveConfig } from 'smooth-doc/components'
 import styled, * as xstyledSc from '@xstyled/styled-components'
 import * as xstyledSystem from '@xstyled/system'

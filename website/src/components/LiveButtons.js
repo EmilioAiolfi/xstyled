@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from 'gatsby'
 import styled, { ThemeProvider, css } from '@xstyled/styled-components'
 import { usePrismTheme } from 'smooth-doc/components'

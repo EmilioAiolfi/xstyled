@@ -1,8 +1,10 @@
 {
+  "name": "website",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "gatsby build && cp _redirects public/",
-    "dev": "gatsby develop",
+    "watch": "gatsby develop",
     "serve": "gatsby serve"
   },
   "dependencies": {

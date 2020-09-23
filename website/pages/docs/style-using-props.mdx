@@ -120,7 +120,7 @@ const Box = styled.div`
 With `styled-components`, all props are forwarded, to avoid that behaviour, use `createSystemComponent` method, it omits all properties.
 
 ```js
-import React from 'react'
+import * as React from 'react'
 import { compose, color, backgroundColor, createSystemComponent } from '@xstyled/system'
 
 const colors = compose(

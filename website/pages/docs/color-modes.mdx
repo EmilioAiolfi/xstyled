@@ -44,7 +44,7 @@ The colors defined at the root of the `colors` object will be accessible as `def
 After your theme and color modes are ready, you have to add a `ColorModeProvider`, just after your `ThemeProvider`:
 
 ```js
-import React from 'react'
+import * as React from 'react'
 import { ThemeProvider, ColorModeProvider } from '@xstyled/styled-components'
 import App from './App'
 
@@ -93,7 +93,7 @@ Now your app is ready! It will automatically uses dark mode according to user sy
 Use the `useColorMode` hook in your application to change the color mode. This value will be stored in `localStorage` and used whenever the page is loaded.
 
 ```js
-import React from 'react'
+import * as React from 'react'
 import { useColorMode } from '@xstyled/styled-components'
 
 function Example(props) {
@@ -117,7 +117,7 @@ function Example(props) {
 To use it with [Gatsby](https://gatsbyjs.org), add the following code to `gatsby-ssr.js`:
 
 ```js
-import React from 'react'
+import * as React from 'react'
 import { getColorModeInitScriptElement } from '@xstyled/styled-components'
 
 export function onRenderBody({ setPreBodyComponents }) {
@@ -130,7 +130,7 @@ export function onRenderBody({ setPreBodyComponents }) {
 To use it with [Next](https://nextjs.org/), create a `_document.js`:
 
 ```js
-import React from 'react'
+import * as React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { getColorModeInitScriptElement } from '@xstyled/styled-components'
 
@@ -265,7 +265,7 @@ Not using CSS custom properties cause the colors to flash on initial page load i
 By default, color modes is linked to `document.body`, but sometimes you may want to specify another target, more specific. To use another target, add `target` and `targetSelector` to `ColorModeProvider`:
 
 ```js
-import React from 'react'
+import * as React from 'react'
 import { ThemeProvider, ColorModeProvider } from '@xstyled/styled-components'
 import App from './App'
 
